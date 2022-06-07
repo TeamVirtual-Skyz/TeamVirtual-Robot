@@ -84,28 +84,28 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hello {} !*
+*😊 Hai {} !*
 ────────────────────────
-I'm a powerful group management bot built to help you manage your group!
+Saya adalah bot managemen grup yang dapat membantu mengelola grup anda!
 ────────────────────
-Hit the /help or tap on button to se available command on me.
+Tekan /Help untuk melihat perintah yang tersedia.
 """
 
 buttons = [
         [
         InlineKeyboardButton(
-            text=f"➕️ Add {BOT_NAME} to your group ➕️", url=f"t.me/{BOT_USERNAME}?startgroup=true"
+            text=f"🧸Tambahkan Bot {BOT_NAME} kedalam grup 🧸", url=f"t.me/{BOT_USERNAME}?startgroup=true"
         ),
     ],
     [
-        InlineKeyboardButton(text="Support", url=f"https://t.me/{SUPPORT_CHAT}"
+        InlineKeyboardButton(text="🧸ꜱᴜᴘᴘᴏʀᴛ🧸", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
         InlineKeyboardButton(
-            text="TryInline", switch_inline_query_current_chat=""
+            text="🧸ᴛʀʏɪɴʟɪɴᴇ🧸", switch_inline_query_current_chat=""
         ),
     ],
     [
-        InlineKeyboardButton(text="Help & Commands❔", callback_data="help_back"
+        InlineKeyboardButton(text="⚜️ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅ⚜️", callback_data="help_back"
         ),
     ],
 ]
@@ -114,7 +114,7 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-PRIME_IMG = "https://telegra.ph/file/b9fa4e1360d0a872a3cd5.jpg"
+PRIME_IMG = "https://telegra.ph/file/8bb15a092c969e876aa64.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @Bukan_guudlooking \
@@ -803,7 +803,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Hi friends, I'm alive.",
+                "🧸 I'm TeamVirtual-Robot.",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
