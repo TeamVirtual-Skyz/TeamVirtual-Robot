@@ -1,5 +1,5 @@
 {
-      "name": "Prime Mega",
+      "name": "TeamVirtual-Robot",
       "description": "A Powerful  Telegram group management bot with autobots theme.",
       "keywords": [
          "telegram",
@@ -9,8 +9,8 @@
          "Prime Mega"
       ],
     
-   "logo":    "https://telegra.ph/file/1da0ff9b5983912852f83.jpg",  
-   "repository": "https://github.com/Tonic990/PrimeMega",
+   "logo":    "https://telegra.ph/file/8bb15a092c969e876aa64.jpg",  
+   "repository": "https://github.com/TeamVirtual-Skyz/TeamVirtual-Robot",
    "addons": [
           {
          "options": {
