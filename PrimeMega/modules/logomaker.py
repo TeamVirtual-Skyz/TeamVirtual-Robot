@@ -44,7 +44,7 @@ def mediainfo(media):
 
 @register(pattern="^/logo ?(.*)")
 async def logo_gen(event):
-    xx = await event.reply("`Preparing your logo...`")
+    xx = await event.reply("`🧸 Sedang membuat logo...`")
     name = event.pattern_match.group(1)
     if not name:
         await xx.edit("`Provide some text to draw!\nExample: /logo <your name>!`")
@@ -108,12 +108,12 @@ async def logo_gen(event):
               stroke_width=strke, stroke_fill="black")
     flnme = f"logo.png"
     img.save(flnme, "png")
-    await xx.edit("`Uploading`")
+    await xx.edit("`🧸 Mengupload logo`")
     if os.path.exists(flnme):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [ᴘʀɪᴍᴇ ᴍᴇɢᴀ](https://t.me/PrimeMegaBot)",
+            caption="Created logo by 🇮🇩 [ᴍᴜꜱɪᴄ](https://t.me/MusicCtvBot)",
             force_document=False,
         )
         os.remove(flnme)
@@ -127,7 +127,7 @@ async def logo_gen(event):
 
 @register(pattern="^/wlogo ?(.*)")
 async def logo_(event):
-    xx = await event.reply("`Preparing your logo...`")
+    xx = await event.reply("`🧸 Sedang membuat logo...`")
     name = event.pattern_match.group(1)
     if not name:
         await xx.edit("`Provide some text to draw!\nExample: /wlogo <your name>!`")
@@ -191,12 +191,12 @@ async def logo_(event):
               stroke_width=strke, stroke_fill="black")
     flnme = f"logo.png"
     img.save(flnme, "png")
-    await xx.edit("`Uploading`")
+    await xx.edit("`🧸 Mengupload logo`")
     if os.path.exists(flnme):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [ᴘʀɪᴍᴇ ᴍᴇɢᴀ](https://t.me/PrimeMegaBot)",
+            caption="Logo by 🇮🇩 [ᴍᴜꜱɪᴄ](https://t.me/MusicCtvBot)",
             force_document=False,
         )
         os.remove(flnme)
