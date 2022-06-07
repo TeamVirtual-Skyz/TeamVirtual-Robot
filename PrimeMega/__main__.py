@@ -85,16 +85,17 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *😊 Hai {} !*
-────────────────────────
+❖▬▬▬▬▬▬๑۩▬۩๑▬▬▬▬▬▬❖
 Saya adalah bot managemen grup yang dapat membantu mengelola grup anda!
-────────────────────
+❖▬▬▬▬▬▬๑۩▬۩๑▬▬▬▬▬▬❖
 Tekan /Help untuk melihat perintah yang tersedia.
+❖▬▬▬▬▬▬๑۩▬۩๑▬▬▬▬▬▬❖
 """
 
 buttons = [
         [
         InlineKeyboardButton(
-            text=f"🧸Tambahkan Bot {BOT_NAME} kedalam grup 🧸", url=f"t.me/{BOT_USERNAME}?startgroup=true"
+            text=f"🧸Tambahkan {BOT_NAME} kedalam grup 🧸", url=f"t.me/{BOT_USERNAME}?startgroup=true"
         ),
     ],
     [
